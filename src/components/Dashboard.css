@@ -22,7 +22,7 @@ body {
   background-color: #fff;
 }
 
-/* Header Styles */
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -73,7 +73,7 @@ body {
   cursor: pointer;
 }
 
-/* Carousel Styles */
+
 .carousel-container {
   position: relative;
   margin: 20px 0;
@@ -159,7 +159,7 @@ body {
   background-color: white;
 }
 
-/* Product Section Styles */
+
 .product-section {
   padding: 20px;
   margin-bottom: 30px;
@@ -234,7 +234,7 @@ body {
   font-size: 12px;
 }
 
-/* Brand Section Styles */
+
 .brand-section {
   padding: 20px;
   margin-bottom: 30px;
@@ -279,7 +279,7 @@ body {
   width: 100%;
 }
 
-/* Footer Styles */
+
 .footer {
   background-color: #f0f0f0;
   padding: 40px 20px 20px;
@@ -381,7 +381,7 @@ body {
   color: #777;
 }
 
-/* Responsive Styles */
+
 @media (min-width: 768px) {
   .footer-top {
     flex-direction: row;
@@ -402,7 +402,7 @@ body {
   }
 }
 
-/* Tambahan */
+
 .sidebar {
   position: fixed;
   top: 0;
@@ -424,7 +424,7 @@ body {
 
 .brand-name {
   font-size: 1.2rem;
-  color: #14532d; /* hijau tua */
+  color: #14532d;
   font-weight: bold;
 }
 
@@ -487,7 +487,7 @@ body {
   z-index: 1000;
   transition: transform 0.3s ease-in-out;
 }
-/* Overlay background */
+
 .sidebar-overlay {
   position: fixed;
   top: 0;
@@ -498,7 +498,7 @@ body {
   z-index: 999;
 }
 
-/* Modal sliding sidebar */
+
 .sidebar-modal {
   position: fixed;
   top: 0;
@@ -512,7 +512,7 @@ body {
   z-index: 1000;
 }
 
-/* Slide-in animation */
+
 @keyframes slideIn {
   from {
     transform: translateX(-100%);
@@ -522,7 +522,7 @@ body {
   }
 }
 
-/* Optional close button */
+
 .close-btn {
   background: none;
   border: none;
@@ -555,6 +555,3 @@ body {
   justify-content: center;
   height: 300px;
 }
-
-
-
