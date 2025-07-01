@@ -19,7 +19,6 @@ const Cart = () => {
   const navigate = useNavigate();
   const user = JSON.parse(localStorage.getItem('user'));
 
-  // Fetch cart items from database
   useEffect(() => {
     const fetchCart = async () => {
       if (!user?.id) return;
@@ -174,8 +173,6 @@ const handleCheckout = async (e) => {
   }
 };
 
-
-
   const checkedItemsCount = cartItems.filter(item => item.checked).length;
 
   return (
@@ -219,7 +216,6 @@ const handleCheckout = async (e) => {
   ))}
 </div>
 
-
       <form className="payment-form" onSubmit={handleCheckout}>
         <label>Name on card</label>
         <input type="text" placeholder="" />
@@ -248,7 +244,6 @@ const handleCheckout = async (e) => {
     </div>
   </div>
 )}
-
 
       <header className="header">
         <div className="header-left">
