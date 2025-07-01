@@ -17,7 +17,6 @@ body {
   min-height: 100vh;
 }
 
-/* Header Styles */
 .product-header {
   display: flex;
   justify-content: space-between;
@@ -70,12 +69,10 @@ body {
   justify-content: center;
 }
 
-/* Product Content Styles */
 .product-content {
   padding: 20px;
 }
 
-/* Tabs Styles */
 .product-tabs {
   display: flex;
   align-items: center;
@@ -109,7 +106,6 @@ body {
   background-color: #2196F3;
 }
 
-/* Search Bar Styles */
 .search-container {
   margin-left: auto;
   display: flex;
@@ -134,7 +130,6 @@ body {
   font-size: 14px;
 }
 
-/* Product Grid Styles */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -222,7 +217,6 @@ body {
   font-size: 12px;
 }
 
-/* Responsive styles */
 @media (max-width: 768px) {
   .product-tabs {
     flex-direction: column;
