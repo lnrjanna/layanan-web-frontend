@@ -17,7 +17,6 @@ body {
   min-height: 100vh;
 }
 
-/* Header Styles */
 .header {
   display: flex;
   justify-content: space-between;
@@ -69,7 +68,6 @@ body {
   cursor: pointer;
 }
 
-/* Banner Styles */
 .collections-banner {
   background-size: cover;
   background-position: center;
@@ -87,7 +85,6 @@ body {
   text-align: center;
 }
 
-/* Filter Button */
 .filter-container {
   padding: 15px 20px;
 }
@@ -104,7 +101,6 @@ body {
   gap: 5px;
 }
 
-/* Products Grid */
 .products-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -188,7 +184,6 @@ body {
   align-items: center;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .products-grid {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -212,7 +207,7 @@ body {
 }
 
 .detail-btn {
-  background-color: #28a745;        /* Hijau tua */
+  background-color: #28a745;
   color: white;
   padding: 8px 80px;
   border: none;
@@ -223,11 +218,11 @@ body {
 }
 
 .detail-btn:hover {
-  background-color: #218838;        /* Lebih gelap saat hover */
-  transform: scale(1.05);           /* Sedikit membesar saat hover */
+  background-color: #218838;
+  transform: scale(1.05);
 }
 
 .detail-btn:active {
-  background-color: #1e7e34;        /* Lebih gelap saat diklik */
+  background-color: #1e7e34;
   transform: scale(0.98);
 }
