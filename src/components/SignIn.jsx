@@ -22,7 +22,6 @@ const SignIn = () => {
 
     localStorage.setItem('user', JSON.stringify(user));
 
-    // Redirect berdasarkan role
     if (user.role === 'admin') {
       navigate('/dashboard_admin');
     } else {
@@ -32,7 +31,6 @@ const SignIn = () => {
     alert(err.response?.data?.message || 'Login gagal');
   }
 };
-
 
   return (
     <div className="signin-container">
