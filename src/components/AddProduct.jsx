@@ -94,8 +94,6 @@ const AddProduct = () => {
     }
   };
 
-
-
   return (
     <div className="add-product-container">
       {showSidebar && (
