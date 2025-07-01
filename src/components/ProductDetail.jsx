@@ -21,7 +21,6 @@ const ProductDetail = () => {
         const res = await axios.get(`http://localhost:5000/api/products/${id}`);
         const data = res.data;
 
-        // Parse images dan sizes dari JSON string
         data.images = JSON.parse(data.images || '[]');
         data.sizes = JSON.parse(data.sizes || '[]');
 
@@ -68,7 +67,7 @@ const ProductDetail = () => {
   const user = JSON.parse(localStorage.getItem('user'));
   if (!user) {
     alert('Silakan login terlebih dahulu.');
-    navigate('/login'); // arahkan ke login jika belum login
+    navigate('/login');
     return;
   }
 
@@ -83,7 +82,7 @@ const ProductDetail = () => {
   try {
     await axios.post('http://localhost:5000/api/carts', cartItem);
     alert('Berhasil ditambahkan ke keranjang');
-    navigate('/cart'); // arahkan ke halaman cart jika perlu
+    navigate('/cart');
   } catch (error) {
     console.error('Gagal tambah ke keranjang:', error);
     alert('Gagal menambahkan ke keranjang');
