@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 
 const DashboardAdmin = () => {
-  const [showSidebar, setShowSidebar] = useState(false); // <-- Pindah ke atas
-    const navigate = useNavigate();                        // <-- Pindah ke atas
+  const [showSidebar, setShowSidebar] = useState(false); 
+    const navigate = useNavigate();                       
     const user = JSON.parse(localStorage.getItem('user'));
 
     if (!user || user.role !== 'admin') {
@@ -18,17 +18,17 @@ const DashboardAdmin = () => {
       localStorage.removeItem('user');
       navigate('/dashboard');
     }
-  // Data statistik (bisa diganti dengan state dan API call di implementasi nyata)
+  
   const stats = {
     totalProduct: 5,
     orders: 3,
     visitors: 5
   };
 
-  // Handler untuk menambah produk
+  
   const handleAddProduct = () => {
     console.log('/tambah_produk');
-    // Implementasi navigasi ke halaman tambah produk
+    
   };
 
   return (
