@@ -17,7 +17,6 @@ body {
   min-height: 100vh;
 }
 
-/* Header Styles */
 .product-header {
   display: flex;
   justify-content: space-between;
@@ -56,7 +55,6 @@ body {
   justify-content: center;
 }
 
-/* Form Content Styles */
 .add-product-content {
   padding: 20px;
   max-width: 800px;
@@ -101,7 +99,6 @@ body {
   min-height: 100px;
 }
 
-/* Image Upload Styles */
 .image-upload-container {
   display: flex;
   flex-wrap: wrap;
@@ -159,7 +156,6 @@ body {
   background-color: #f0f0f0;
 }
 
-/* Size Options Styles */
 .size-options {
   display: flex;
   flex-wrap: wrap;
@@ -199,7 +195,6 @@ body {
   color: #1e88e5;
 }
 
-/* Form Actions Styles */
 .form-actions {
   display: flex;
   justify-content: flex-end;
@@ -221,7 +216,6 @@ body {
   background-color: #1976d2;
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
   .add-product-content {
     padding: 10px;
