@@ -18,10 +18,10 @@ const EditProduct = () => {
     weight: '',
     description: '',
     sizes: [],
-    images: [] // hanya nama file atau path
+    images: []
   });
 
-  const [imagePreview, setImagePreview] = useState([]); // preview & file
+  const [imagePreview, setImagePreview] = useState([]);
   const [loading, setLoading] = useState(false);
   const user = JSON.parse(localStorage.getItem('user'));
   const navigate = useNavigate();
@@ -45,7 +45,7 @@ const EditProduct = () => {
           images: imageArr
         });
 
-        // Untuk preview
+        
         const previewList = imageArr.map((img) => ({
           preview: `http://localhost:5000/${img}`,
           file: null
