@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
   const navigate = useNavigate();
-  // Data untuk carousel
+  
   const carouselItems = [
     {
       id: 1,
@@ -30,7 +30,7 @@ const Home = () => {
       bgColor: '#FFD4CA',
     },
   ];
-  // Data untuk produk rekomendasi
+  
   const [recommendedProducts, setRecommendedProducts] = useState([]);
 useEffect(() => {
   const fetchRecommended = async () => {
@@ -46,7 +46,7 @@ useEffect(() => {
 }, []);
 
   
-  // Format harga dalam Rupiah
+  
   const formatPrice = (price) => {
     return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
   };
@@ -62,8 +62,8 @@ useEffect(() => {
   };
 
    const handleLogout = () => {
-    localStorage.removeItem('user'); // Hapus data user dari localStorage
-    navigate('/dashboard'); // Arahkan ke dashboard
+    localStorage.removeItem('user'); 
+    navigate('/dashboard'); 
   };
 
 
