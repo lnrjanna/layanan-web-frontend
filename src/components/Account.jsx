@@ -85,7 +85,7 @@ if (Object.keys(userData).length === 0) {
         </div>
       </header>
 
-      {/* Main Content */}
+      {}
       <div className="account-content">
         <div className="account-profile">
           <div className="profile-left">
