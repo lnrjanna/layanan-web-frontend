@@ -17,13 +17,13 @@ body {
   min-height: 100vh;
 }
 
-/* Header Styles */
+
 .dashboard-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 30px;
-  background-color: #2196F3; /* Warna biru seperti pada gambar */
+  background-color: #2196F3;
   color: white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
@@ -70,7 +70,7 @@ body {
   justify-content: center;
 }
 
-/* Dashboard Content Styles */
+
 .dashboard-content {
   padding: 20px;
 }
@@ -126,7 +126,7 @@ body {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive styles */
+
 @media (min-width: 768px) {
   .stats-container {
     grid-template-columns: repeat(4, 1fr);
@@ -148,7 +148,7 @@ body {
 .sidebar-header-admin {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Warna biru seperti pada gambar */
+  align-items: center;
   color: white;
 }
 
