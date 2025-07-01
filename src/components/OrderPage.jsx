@@ -10,7 +10,6 @@ const OrderPage = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [orders, setOrders] = useState([]);
 
-  // Mapping antara nama tab dan status di database
   const statusMap = {
     'NEW ORDER': 'pending',
     'PACKED': 'packed',
@@ -69,7 +68,6 @@ const OrderPage = () => {
       status: nextStatus,
     });
 
-    // update state
     setOrders(prev =>
       prev.map(order =>
         order.id === id ? { ...order, status: nextStatus } : order
@@ -83,7 +81,6 @@ const OrderPage = () => {
 
   const handleCancelOrder = (id) => {
     console.log(`Canceling order with id: ${id}`);
-    // Implementasi pembatalan
   };
 
   const formatPrice = (price) => {
