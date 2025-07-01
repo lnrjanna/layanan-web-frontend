@@ -46,7 +46,7 @@ const FormAccount = () => {
           }
         })
         .catch(() => {
-          // data belum ada, biarkan kosong
+          
         });
     }
   }, [userId]);
@@ -76,11 +76,11 @@ const FormAccount = () => {
 });
 
 
-      // Cek apakah data sudah ada
+      
       const check = await axios.get(`http://localhost:5000/api/userdata/${userId}`);
 
       if (check?.data?.id) {
-        // Gunakan POST dengan override method ke PUT (trik)
+        
         await axios({
           method: 'post',
           url: `http://localhost:5000/api/userdata/${userId}?_method=PUT`,
@@ -88,7 +88,7 @@ const FormAccount = () => {
           headers: { 'Content-Type': 'multipart/form-data' }
         });
       } else {
-        // Insert baru
+        
         await axios.post(`http://localhost:5000/api/userdata`, data, {
           headers: { 'Content-Type': 'multipart/form-data' }
         });
@@ -103,8 +103,8 @@ const FormAccount = () => {
   };
   const [showSidebar, setShowSidebar] = useState(false);
     const handleLogout = () => {
-      localStorage.removeItem('user'); // Hapus data user dari localStorage
-      navigate('/dashboard'); // Arahkan ke dashboard
+      localStorage.removeItem('user'); 
+      navigate('/dashboard'); 
     };
 
   return (
