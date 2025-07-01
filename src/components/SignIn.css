@@ -1,0 +1,133 @@
+.signin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fdf9f9;
+  padding: 20px;
+}
+
+.signin-card {
+  display: flex;
+  width: 900px;
+  height: 550px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.signin-left-panel {
+  flex: 1;
+  background-color: #f8e1dd;
+  position: relative;
+  /* Area untuk desain tanpa gambar sepatu */
+}
+
+.signin-right-panel {
+  flex: 1;
+  background-color: white;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signin-title {
+  color: #d88c9a;
+  font-size: 36px;
+  margin-bottom: 40px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+  outline: none;
+  font-size: 16px;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  color: #888;
+  font-size: 14px;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+}
+
+.remember-me input {
+  margin-right: 5px;
+}
+
+.forgot-password a {
+  color: #888;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  color: #d88c9a;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #d88c9a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  margin-bottom: 20px;
+}
+
+.submit-btn:hover {
+  background-color: #c27a88;
+}
+
+.signup-link {
+  text-align: center;
+  color: #888;
+  font-size: 14px;
+}
+
+.signup-link a {
+  color: #d88c9a;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+.signin-image{
+  width: 95%;
+  height: 95%;
+  position: center;
+  top: 0;
+  margin-left: 20px;
+  margin-top: -30px;
+}
