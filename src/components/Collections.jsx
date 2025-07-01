@@ -11,7 +11,7 @@ const Collections = () => {
   
     const [showSidebar, setShowSidebar] = useState(false);
     const navigate = useNavigate();
-  // Data produk (contoh data)
+  
   const [products, setProducts] = useState([]);
 
 useEffect(() => {
@@ -23,28 +23,28 @@ useEffect(() => {
 }, []);
 
 
-  // Format harga dalam Rupiah
+ 
   const formatPrice = (price) => {
     return price.toLocaleString('id-ID');
   };
 
-  // Render bintang rating
+  
   const renderRatingStars = (rating) => {
     const stars = [];
     const fullStars = Math.floor(rating);
     const hasHalfStar = rating % 1 !== 0;
 
-    // Full stars
+    
     for (let i = 0; i < fullStars; i++) {
       stars.push(<span key={'full-${i}'} className="star full">★</span>);
     }
 
-    // Half star
+    
     if (hasHalfStar) {
       stars.push(<span key="half" className="star half">★</span>);
     }
 
-    // Empty stars
+    
     const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
     for (let i = 0; i < emptyStars; i++) {
       stars.push(<span key={'empty-${i}'} className="star empty">☆</span>);
@@ -76,7 +76,7 @@ useEffect(() => {
               </div>
             </div>
           )}
-      {/* Header */}
+      {}
       <header className="header">
         <div className="header-left">
           <button className="menu-btn" onClick={() => setShowSidebar(true)}>Menu</button>
@@ -90,7 +90,7 @@ useEffect(() => {
         </div>
       </header>
 
-      {/* Banner */}
+      {}
       <div
   className="collections-banner"
   style={{
@@ -112,11 +112,11 @@ useEffect(() => {
 
 
 
-      {/* Filter Button */}
+      {}
       <div className="filter-container">
       </div>
 
-      {/* Products Grid */}
+      {}
       <div className="products-grid">
   {products.map((product) => {
     let imageSrc = '/default.png';
@@ -127,7 +127,7 @@ useEffect(() => {
         imageSrc = `http://localhost:5000/${images[0]}`;
       }
     } catch (e) {
-      // fallback ke product.image jika ada
+    
       if (product.image) {
         imageSrc = product.image;
       }
