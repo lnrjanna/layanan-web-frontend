@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './Account.css';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import Loading from './Loading'; // Komponen loading terpisah
+import Loading from './Loading';
 
 const Account = () => {
   const navigate = useNavigate();
@@ -23,7 +23,7 @@ const Account = () => {
       })
       .catch(err => {
         console.error('Error fetching user data:', err);
-        navigate('/form_account'); // Arahkan jika error atau data kosong
+        navigate('/form_account'); 
       })
       .finally(() => {
         setLoading(false);
@@ -36,7 +36,7 @@ const Account = () => {
   };
 
   if (userData === null) {
-  return <Loading />; // atau <div>Loading...</div>
+  return <Loading />; 
 }
 if (Object.keys(userData).length === 0) {
   return (
