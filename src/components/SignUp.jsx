@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
-
 const SignUp = () => {
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
@@ -23,10 +22,9 @@ const SignUp = () => {
     });
 
     if (response.status === 200 && response.data.user) {
-      // simpan data user ke localStorage agar halaman lain bisa mengakses
       localStorage.setItem('user', JSON.stringify(response.data.user));
       alert('Signup berhasil!');
-      navigate('/home'); // arahkan ke halaman form_account
+      navigate('/home');
     }
   } catch (error) {
     console.error('Signup error:', error);
