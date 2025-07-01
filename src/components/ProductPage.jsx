@@ -47,7 +47,6 @@ const ProductPage = () => {
   }
 };
 
-
   const filtered = products.filter(p =>
     p.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
