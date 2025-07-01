@@ -17,7 +17,6 @@ body {
   min-height: 100vh;
 }
 
-/* Header Styles */
 .header {
   display: flex;
   justify-content: space-between;
@@ -68,7 +67,6 @@ body {
   cursor: pointer;
 }
 
-/* Cart Content Styles */
 .cart-content {
   padding: 20px;
   max-width: 1200px;
@@ -81,7 +79,6 @@ body {
   gap: 20px;
 }
 
-/* Cart Items Styles */
 .cart-items {
   background-color: #fff;
   border-radius: 10px;
@@ -201,7 +198,6 @@ body {
   text-decoration: underline;
 }
 
-/* Order Summary Styles */
 .order-summary {
   background-color: #f8e1dd;
   border-radius: 10px;
@@ -254,7 +250,6 @@ body {
   background-color: #007f67;
 }
 
-/* Responsive Styles */
 @media (max-width: 992px) {
   .cart-grid {
     grid-template-columns: 1fr;
@@ -333,7 +328,6 @@ body {
   }
 }
 
-/* Add more responsive styles as needed */
 .checkout-modal-overlay {
   position: fixed;
   top: 0;
